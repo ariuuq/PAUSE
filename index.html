@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f3ee">
+  <meta name="description" content="PAUSE — a gentle space to check in, reset and take things one step at a time.">
+  <title>PAUSE — Take a moment for yourself</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="PAUSE home"><span class="brand-mark">p</span><span>PAUSE<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="#why">Why PAUSE</a>
+      <a href="#checkin">Check-in</a>
+      <a href="#tools">Tools</a>
+      <a href="#journal">Journal</a>
+      <button class="nav-login" id="openLogin">My space ↗</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> A LITTLE SPACE TO BREATHE</p>
+        <h1>You don't have to<br><em>figure it all out</em><br>right now.</h1>
+        <p class="hero-text">A busy mind deserves a softer moment. Check in with yourself, find a small reset, and take the next step at your own pace.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#checkin">Take a PAUSE <span>↗</span></a>
+          <a class="text-link" href="#why">Discover the idea <span>↓</span></a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✳</span><span>Small steps count. Even the quiet ones.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative illustration">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="sun-shape"></div>
+        <div class="art-card">
+          <span class="art-kicker">A REMINDER</span>
+          <span class="art-quote">You are allowed<br>to slow down.</span>
+          <span class="art-spark">✳</span>
+          <span class="art-line"></span>
+          <span class="art-caption">one moment at a time</span>
+        </div>
+        <span class="floating flower">✿</span><span class="floating star">✳</span><span class="floating tiny-heart">♡</span>
+        <div class="art-label">BREATHE IN<br>YOUR OWN TIME</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Encouraging reminders"><div>YOU CAN START AGAIN <span>✳</span> ONE THING AT A TIME <span>✳</span> REST IS PRODUCTIVE TOO <span>✳</span> YOU CAN START AGAIN <span>✳</span> ONE THING AT A TIME <span>✳</span></div></section>
+
+    <section class="intro section-wrap" id="why">
+      <div class="section-heading">
+        <p class="eyebrow">01 / THE IDEA</p>
+        <h2>Not another place<br>to be <em>perfect.</em></h2>
+      </div>
+      <div class="intro-copy">
+        <p>PAUSE is a small digital wellbeing space designed for teenagers who sometimes feel overwhelmed by school, expectations, relationships, or everyday life.</p>
+        <p>It isn't about having the perfect answer. It's about noticing what is going on, choosing one helpful action, and remembering that asking for support is okay.</p>
+        <a class="text-link" href="#tools">Explore the tools <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="checkin-section" id="checkin">
+      <div class="section-wrap">
+        <div class="section-topline"><p class="eyebrow">02 / EMOTIONAL CHECK-IN</p><span class="section-number">A MOMENT FOR YOU</span></div>
+        <div class="checkin-grid">
+          <div>
+            <h2>How are you<br><em>arriving today?</em></h2>
+            <p class="muted">No right or wrong answer. Choose the feeling that comes closest.</p>
+            <div class="mood-grid" id="moodGrid">
+              <button class="mood-card" data-mood="Calm"><span>☁</span>Calm</button>
+              <button class="mood-card" data-mood="Happy"><span>☀</span>Happy</button>
+              <button class="mood-card" data-mood="Anxious"><span>〰</span>Anxious</button>
+              <button class="mood-card" data-mood="Tired"><span>☾</span>Tired</button>
+              <button class="mood-card" data-mood="Frustrated"><span>✳</span>Frustrated</button>
+              <button class="mood-card" data-mood="Not sure"><span>♡</span>Not sure</button>
+            </div>
+            <p class="mood-feedback" id="moodFeedback" aria-live="polite">Your feelings are welcome here.</p>
+          </div>
+          <aside class="checkin-side">
+            <span class="side-symbol">✳</span>
+            <p class="side-label">A GENTLE REMINDER</p>
+            <h3>You don't need to explain your feelings to deserve kindness.</h3>
+            <p>Try naming what you feel without judging yourself for it.</p>
+            <a href="#journal" class="side-link">Write it down <span>↗</span></a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="tools-section section-wrap" id="tools">
+      <div class="section-topline"><p class="eyebrow">03 / YOUR TOOLKIT</p><span class="section-number">PICK ONE SMALL STEP</span></div>
+      <div class="tools-heading"><h2>A reset can be<br><em>really small.</em></h2><p class="muted">Choose what feels useful right now. You can stop whenever you want.</p></div>
+      <div class="tool-grid">
+        <article class="tool-card lavender">
+          <div class="tool-top"><span class="tool-icon">◉</span><span>01 — SLOW DOWN</span></div>
+          <h3>Breathing space</h3>
+          <p>Follow a gentle breathing rhythm for a short moment.</p>
+          <div class="breath-orb" id="breathOrb"><span id="breathText">Ready?</span></div>
+          <button class="button button-light" id="breathButton">Start breathing <span>↗</span></button>
+        </article>
+        <article class="tool-card peach">
+          <div class="tool-top"><span class="tool-icon">✳</span><span>02 — COME BACK</span></div>
+          <h3>Grounding 5–4–3–2–1</h3>
+          <p>Bring your attention gently to the room around you.</p>
+          <ul class="ground-list">
+            <li><b>5</b> things you can see</li><li><b>4</b> things you can feel</li><li><b>3</b> things you can hear</li><li><b>2</b> things you can smell</li><li><b>1</b> thing you can taste</li>
+          </ul>
+          <button class="button button-light" id="groundButton">Start grounding <span>↗</span></button>
+        </article>
+        <article class="tool-card mint">
+          <div class="tool-top"><span class="tool-icon">✎</span><span>03 — LET IT OUT</span></div>
+          <h3>Thought unload</h3>
+          <p>Put one thought into words. It doesn't have to sound organized.</p>
+          <div class="prompt-box">“Something taking up space in my mind is…”</div>
+          <a class="button button-light" href="#journal">Open my journal <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="journal-section" id="journal">
+      <div class="section-wrap journal-grid">
+        <div class="journal-intro">
+          <p class="eyebrow">04 / PRIVATE NOTES</p>
+          <h2>Make room for<br><em>your thoughts.</em></h2>
+          <p class="muted">A little space to write what is on your mind. Your entries stay in this browser on this device in this demo.</p>
+          <div class="privacy-note"><span>♡</span> Your words don't need to be perfect or shared.</div>
+        </div>
+        <div class="journal-box">
+          <label for="journalEntry">TODAY, I WANT TO SAY…</label>
+          <textarea id="journalEntry" placeholder="Start wherever you are. A sentence, a list, or just a few words…" rows="6"></textarea>
+          <div class="journal-controls"><span id="saveStatus">Only you can see this on this device.</span><button class="button button-dark" id="saveEntry">Save note <span>↗</span></button></div>
+          <div class="saved-entry" id="savedEntry"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section-wrap">
+      <span class="closing-star">✳</span>
+      <p class="eyebrow">A FINAL NOTE</p>
+      <h2>You can take the next step<br><em>when you're ready.</em></h2>
+      <p>And if things feel too heavy to handle alone, reach out to a trusted adult, school counselor, or someone who can support you.</p>
+      <a class="button button-dark" href="#home">Back to the beginning ↑</a>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">p</span><span>PAUSE<span class="brand-dot">.</span></span></a><span>Made for real people having real days.</span><span>TAKE IT ONE MOMENT AT A TIME ✳</span></footer>
+
+  <div class="modal-backdrop" id="loginModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeLogin" aria-label="Close">×</button>
+      <p class="eyebrow">YOUR LITTLE CORNER</p><h2 id="modalTitle">Welcome to<br><em>your space.</em></h2>
+      <p>This is a visual demo, not a real account system. You can enter a nickname to personalize the page on this device.</p>
+      <label for="nickname">YOUR NICKNAME</label><input id="nickname" type="text" maxlength="24" placeholder="What should we call you?">
+      <button class="button button-dark full-button" id="saveNickname">Continue <span>↗</span></button>
+      <small>No password or personal information needed.</small>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
